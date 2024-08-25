@@ -12,7 +12,7 @@ router.post("/", authenticate, async (req, res, next) => {
     const { name, description, categoryId, statusId, userId } = req.body;
     
     if (!name || !description || !userId) {
-        return res.jsend.fail({ message: "Name, description, and userId are required fields." });
+        return res.jsend.fail({ message: "Name, description, and userId are required fields" });
     }
 
     try {
